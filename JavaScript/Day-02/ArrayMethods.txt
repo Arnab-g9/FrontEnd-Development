@@ -1,0 +1,13 @@
+/**
+ * ---------- very importent array method ------------
+ *  - foreach method
+ *  - map method
+ *  - filter method
+ *  - reduce method
+ *  - sort method
+ *  - find method
+ *  - every
+ *  - some
+ *  - fill
+ *  - splice
+ */
