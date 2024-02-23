@@ -8,9 +8,9 @@ export default function App() {
   );
 }
 function TipCalculator() {
-  const [amount, setAmount] = useState(0);
-  const [tip1, setTip1] = useState("");
-  const [tip2, setTip2] = useState("");
+  const [amount, setAmount] = useState("");
+  const [tip1, setTip1] = useState(0);
+  const [tip2, setTip2] = useState(0);
 
   const avgTip = (Number(tip1) + Number(tip2)) / 2;
   const tip = (amount * avgTip) / 100;
@@ -19,9 +19,9 @@ function TipCalculator() {
     setAmount(() => Number(e.target.value));
   }
   function handleReset() {
-    setAmount(0);
-    setTip1("");
-    setTip2("");
+    setAmount("");
+    setTip1(0);
+    setTip2(0);
   }
   return (
     <div>
@@ -32,7 +32,8 @@ function TipCalculator() {
       <Tip tip={tip2} onChangeTip={(e) => setTip2(Number(e.target.value))}>
         <span>How do your friend like the service? </span>
       </Tip>
-      <Output tip={tip} total={total} amount={amount} />
+      {amount > 0 && <Output tip={tip} total={total} amount={amount} />}
+
       <Reset onReset={handleReset} />
     </div>
   );
