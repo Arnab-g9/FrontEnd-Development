@@ -1,0 +1,35 @@
+repetation steps -- html file, 
+css file, 
+link both of them and write there boilerplate code 
+
+rules-- 
+div jaha bhi ek se jada elements dikhe waha div hay
+jaha bhi rectangular shapes dikhe waha bhi div hay 
+
+css element, class, id selection rule -- 
+
+for element -- just write the element name in css file for
+class -- just write the .className in the css file for id -- hust write the
+#idName in the css file
+
+color - for text color
+background-color - for background-color
+
+units -- 
+px -> px is static. it is not dynamic when the window size is changed. but it will changed on screen sized like- mobile desktop tab erc
+
+% -> % is daynamic when the window size or screen size is changed. % always change respective it's parent or take value of it's paren. like if the % is wrap inside a div and the div has 100px of hight and width then the inner % value only take the % value of the 100px of height and width
+
+vw, vh --> vw and vh takes the screen % value.
+
+NB: the difference betwwn vw,vh and % is
+-- % hamesa parent se value leta hay
+-- vw and vh screen se value leta hay
+
+em --> em depend karta hay us element ke font size par, aur ye agar parent ko dete hai to children par bhi apply hota hay. and em value change depend upon the font-size change
+
+rem -- root empherial unit. it depend upon the html font-size. rem does not depend upon the current element font-size
+
+max-width and max-height -- max-width and max-height is we set a upper-limit of width and height, we can not go beyond that we can go upto the max-width and height
+
+min-width and min-height --  min-width and min-height is the lower limit of the width and height where we can not set the height and width value less then the min-width and min-height value. it besically means we can start from the minheight and min-width value and can go beyond that. there is no upper limit

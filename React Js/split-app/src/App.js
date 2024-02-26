@@ -100,7 +100,7 @@ function Friend({ friend, onSelection, selectedFriend }) {
   const isSelected = selectedFriend?.id === friend.id;
   return (
     <li className={isSelected ? "selected" : ""}>
-      <img src={friend.image} alt={friend.name} />
+      <img src={friend.image} alt={friend.name} className="image" />
       <h3>{friend.name}</h3>
       {friend.balance < 0 && (
         <p className="red">
@@ -177,14 +177,14 @@ function FormSplitBill({ selectedFriend, onSplitBill }) {
   return (
     <form className="form-split-bill" onSubmit={handleSubmit}>
       <h2>Split a bill with {selectedFriend.name}</h2>
-      <label>💰 Bill value</label>
+      <label>💰 Bill value (Rs)</label>
       <input
         type="text"
         value={bill}
         onChange={(e) => setBill(Number(e.target.value))}
       />
 
-      <label>👌 Your expense</label>
+      <label>👌 Your expense (Rs)</label>
       <input
         type="text"
         value={paidByUser}
