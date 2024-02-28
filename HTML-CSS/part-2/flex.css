@@ -14,11 +14,12 @@ body {
   align-items: end;
   width: 300px;
   height: 300px;
-  /* justify-content: space-around; */
+  justify-content: space-evenly;
   background-color: red;
 }
 #one {
   width: 50px;
+  /* flex: 3; */
   height: 50px;
   background-color: yellow;
 }

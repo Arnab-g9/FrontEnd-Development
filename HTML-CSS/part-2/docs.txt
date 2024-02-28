@@ -74,3 +74,6 @@ we apply flexbox property to the realtive parent not in the child.
 when we apply flexbox in the relative parent then the 2 axis activated like x-axis(main-axis) and y-axis(cross-axis)
 
 main-axis/x-axis pe work karne ke liye use hota hey jutify content and y-axis/cross-axis pe work karne ke liye use hota he align-items 
+
+psudo elements rule--
+har element ke pass ek possibility hoti hai ki wo element chahe to inactive do after and before naam ki properties ko active kar sakte hai

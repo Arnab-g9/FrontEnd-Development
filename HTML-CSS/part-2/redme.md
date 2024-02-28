@@ -13,8 +13,17 @@ display
 position
 background
 flex
-pseudo-elements
-pseudo-classes
+pseudo-elements --
+::before
+::after
+::first-line
+::first-letter
+::selection
+pseudo-classes --
+:hover
+:active
+:focus
+:nth-child(n)
 
 animation
 media queries
