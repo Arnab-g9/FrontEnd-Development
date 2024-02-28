@@ -80,3 +80,18 @@ html {
   height: 200px;
   background-color: yellow;
 }
+.font-family {
+  font-family: monospace;
+  font-weight: 200;
+  text-transform: capitalize;
+  text-decoration: line-through;
+  font-size: 2vw;
+}
+.line-height {
+  line-height: 1.5;
+  font-size: 30px;
+}
+.text-align {
+  text-align: justify;
+  /* text-align: center; left, right, justify */
+}
