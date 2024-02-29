@@ -77,3 +77,28 @@ main-axis/x-axis pe work karne ke liye use hota hey jutify content and y-axis/cr
 
 psudo elements rule--
 har element ke pass ek possibility hoti hai ki wo element chahe to inactive do after and before naam ki properties ko active kar sakte hai
+
+psudo classes:--
+nthChild
+
+colors rule:----
+color Names = red, green ,blue.
+Hexadecimal Notation: #
+RGB Functional Notation: rgb 
+RGBA Functional Notation: RGBA
+
+aisa samjho humaari screen mainly teen colors dikha sakti hai, kehne ka matlab hai screen bani khoob saari leds se and har led teen color dikha sakti hai and unka combination bhi.
+
+css main har color ki min value 0 hai and maximum value 255 hai
+r-255
+g-255
+b-255
+
+teeno full intencity -- white
+teeno full lowest intencity -- black
+
+gird ---
+grid is for build for website structureyt6
+
+difference between display flex and display grid is display flex is single dimensional menas we can work on a single dimension either row wise or column wise at a particular time. But,
+in display grid is two dimensional property we can work upon row and column both in a particular time.
