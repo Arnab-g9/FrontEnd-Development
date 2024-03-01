@@ -111,6 +111,7 @@ body {
   object-fit: cover;
   border-radius: 60px;
   object-position: 50% 20%;
+  /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
 }
 
 #arrow {
