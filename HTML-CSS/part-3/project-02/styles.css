@@ -45,9 +45,9 @@ body {
   padding: 40px 80px;
 }
 #center h1 {
-  font-size: 80px;
+  font-size: 4.1vw;
   font-weight: 500;
-  line-height: 80px;
+  line-height: 4.4vw;
 }
 #center-in {
   /* height: 200px; */
@@ -97,10 +97,14 @@ body {
   background-color: rgb(255, 255, 220);
 }
 #bottom {
-  height: 30%;
+  height: 25.5%;
   width: 100%;
   background-color: red;
-  background-image: url(https://i.pinimg.com/564x/f1/85/17/f1851716329b20d3b77609de5add3674.jpg);
+  background-image: url(https://img.freepik.com/free-photo/young-woman-wearing-black-hat-standing-against-blue-background_23-2147910332.jpg?w=1380&t=st=1709285626~exp=1709286226~hmac=9dd6180fcef6c35989cdcac643d74886d9c9944d7f849512e39e4ec46c6d5a8a);
   background-size: cover;
-  background-position: 10% 30%;
+  background-position: 15% 30%;
+}
+
+/* Mobile first View */
+@media (max-width: 600px) {
 }
