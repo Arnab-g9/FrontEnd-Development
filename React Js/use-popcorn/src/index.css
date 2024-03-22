@@ -56,11 +56,6 @@ body {
   border-radius: 0.9rem;
   overflow: scroll;
   position: relative;
-  overflow-y: auto;
-  overflow-x: auto;
-}
-.box::-webkit-scrollbar {
-  display: none;
 }
 
 .loader {
@@ -144,8 +139,6 @@ body {
   list-style: none;
   padding: 0.8rem 0;
   overflow: scroll;
-  overflow-y: auto;
-  overflow-x: auto;
 }
 
 .list-watched {
