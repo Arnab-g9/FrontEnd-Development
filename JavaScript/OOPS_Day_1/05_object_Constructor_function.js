@@ -54,27 +54,32 @@ const userMethods = {
   is18: function () {
     return this.age >= 18;
   },
+  sing: function () {
+    return "toon na lala";
+  },
 };
 function createUser2(firstName, lastName, email, age, address) {
-  const user = {};
+  // const user = {};
+  const user = Object.create(userMethods);
   user.firstName = firstName;
   user.lastName = lastName;
   user.email = email;
   user.age = age;
   user.address = address;
-  user.about = userMethods.about;
-  user.is18 = userMethods.is18;
+  // user.about = userMethods.about;
+  // user.is18 = userMethods.is18;
+  // user.sing = userMethods.sing;
   return user;
 }
 
-const user2 = createUser(
+const user2 = createUser2(
   "harshit",
   "vashisth",
   "hashit@gmail.com",
   3,
   "my address"
 );
-const user3 = createUser(
+const user3 = createUser2(
   "Arnab",
   "Ghorai",
   "hashit@gmail.com",
@@ -86,3 +91,5 @@ console.log(user3.about());
 
 // --- but here is also flaws -----
 // see the next file
+
+console.log(user2);
