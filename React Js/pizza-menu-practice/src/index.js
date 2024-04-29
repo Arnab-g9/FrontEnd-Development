@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 const pizzaData = [
   {
     name: "Focaccia",
@@ -42,3 +45,54 @@ const pizzaData = [
     soldOut: false,
   },
 ];
+
+function App() {
+  return (
+    <div>
+      <Header />
+      <Menu />
+      <Footer />
+    </div>
+  );
+}
+
+function Header() {
+  return <h1>Fast React Pizza Co.</h1>;
+}
+
+function Menu() {
+  return (
+    <div>
+      <h2>Our Menu</h2>
+      {pizzaData.map((pizza) => (
+        <Pizza pizza={pizza} />
+      ))}
+    </div>
+  );
+}
+
+function Footer() {
+  //   return React.createElement("footer", null, "we are open till 1 a.m.");
+  return (
+    <footer>{new Date().toLocaleTimeString()}. We're currently open</footer>
+  );
+}
+
+function Pizza(props) {
+  return (
+    <div>
+      <h3>{props.pizza.name}</h3>
+      <h5>{props.pizza.ingredients}</h5>
+      <h6>{props.pizza.price}</h6>
+      <img src={props.pizza.photoName} alt={props.pizza.name} />
+    </div>
+  );
+}
+
+//React v18
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
