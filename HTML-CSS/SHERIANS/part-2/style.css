@@ -1,0 +1,97 @@
+/* css boilerplate code */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  color: black;
+  background-color: rgb(210, 243, 26);
+}
+
+.main {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+
+#test {
+  /* 
+  px--
+  width: 200px;
+  height: 200px; */
+
+  /* 
+  %
+  width: 50%;
+  height: 50%; */
+
+  width: 10vw;
+  height: 10vw;
+  background-color: red;
+}
+
+#practiece {
+  width: 600px;
+  height: 600px;
+  /* overflow: hidden; */
+  background-color: green;
+}
+#child {
+  /* width: 100%;
+  height: 100%; */
+  /* persentage adjust corresponding it's most relative parent height */
+  /* width: 100vw;
+  height: 100vh; */
+  /* vw vh adjust on screen size and width */
+  background-color: yellow;
+}
+
+#em {
+  font-size: 18px;
+  width: 2em;
+  height: 2em;
+  /* em value depend upon the current font-size here font value is 18 px and then the em value will be 18px so the height and width will be 2*18 = 36px and id we now change the font-size = 20px then the em value will be 20px and respectively the height and width will be changed */
+  background-color: aquamarine;
+}
+
+html {
+  font-size: 12px;
+}
+
+#rem {
+  font-size: 50px;
+  width: 2rem;
+  height: 2rem;
+  background-color: red;
+}
+
+#max-widthandhight {
+  width: 35px;
+  min-width: 200px;
+  /* width: 1200px; */
+  max-width: 500px;
+  height: 200px;
+  background-color: yellow;
+}
+.font-family {
+  font-family: monospace;
+  font-weight: 200;
+  text-transform: capitalize;
+  text-decoration: line-through;
+  font-size: 2vw;
+}
+.line-height {
+  line-height: 1.5;
+  font-size: 30px;
+}
+.text-align {
+  text-align: justify;
+  /* text-align: center; left, right, justify */
+}

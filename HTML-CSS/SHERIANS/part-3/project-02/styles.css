@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+#nav {
+  height: 80px;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 0px 30px;
+}
+#nav h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#nav i {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+}
+#center {
+  width: 100%;
+  /* background-color: red; */
+  padding: 40px 80px;
+}
+#center h1 {
+  font-size: 4.1vw;
+  font-weight: 500;
+  line-height: 4.4vw;
+}
+#center-in {
+  /* height: 200px; */
+  /* background-color: red; */
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+#center-in p {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(132, 127, 127);
+  line-height: 28px;
+}
+#right {
+  /* background-color: green; */
+  width: 20%;
+}
+.elem {
+  /* background-color: yellow; */
+  /* margin: 5px; */
+  border-top: 2px solid black;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.elem i {
+  font-size: 25px;
+  font-weight: 500;
+  opacity: 0;
+}
+.elem a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+.elem:hover i {
+  opacity: 1;
+}
+.elem:hover a {
+  text-decoration: underline;
+}
+.elem:hover {
+  background-color: rgb(255, 255, 220);
+}
+#bottom {
+  height: 25.5%;
+  width: 100%;
+  background-color: red;
+  background-image: url(https://img.freepik.com/free-photo/young-woman-wearing-black-hat-standing-against-blue-background_23-2147910332.jpg?w=1380&t=st=1709285626~exp=1709286226~hmac=9dd6180fcef6c35989cdcac643d74886d9c9944d7f849512e39e4ec46c6d5a8a);
+  background-size: cover;
+  background-position: 15% 30%;
+}
+
+/* Mobile first View */
+@media (max-width: 600px) {
+}

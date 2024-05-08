@@ -1,0 +1,104 @@
+repetation steps -- html file, 
+css file, 
+link both of them and write there boilerplate code 
+
+rules-- 
+div jaha bhi ek se jada elements dikhe waha div hay
+jaha bhi rectangular shapes dikhe waha bhi div hay 
+
+css element, class, id selection rule -- 
+
+for element -- just write the element name in css file for
+class -- just write the .className in the css file 
+for id -- hust write the #idName in the css file
+
+color - for text color
+background-color - for background-color
+
+units -- 
+px -> px is static. it is not dynamic when the window size is changed. but it will changed on screen sized like- mobile desktop tab etc
+
+% -> % is daynamic when the window size or screen size is changed. % always change respective it's parent or take value of it's paren. like if the % is wrap inside a div and the div has 100px of hight and width then the inner % value only take the % value of the 100px of height and width
+
+vw, vh --> vw and vh takes the screen % value.
+
+NB: the difference betwwn (vw,vh) and % is
+-- % hamesa parent se value leta hay
+-- vw and vh screen se value leta hay
+
+em --> em depend karta hay us element ke font size par, aur ye agar parent ko dete hai to children par bhi apply hota hay. and em value change depend upon the font-size change
+
+rem -- root empherial unit. it depend upon the html font-size. rem does not depend upon the current element font-size
+
+max-width and max-height -- max-width and max-height is we set a upper-limit of width and height, we can not go beyond that we can go upto the max-width and height
+
+min-width and min-height --  min-width and min-height is the lower limit of the width and height where we can not set the height and width value less then the min-width and min-height value. it besically means we can start from the minheight and min-width value and can go beyond that. there is no upper limit
+
+NB: when we set the min-hight or width and max-hight or width then we can set the elements hight which is >= min-hight and <= max-hight. can not set less then the min-hight and can not go beyond the max-hight
+
+margin-padding rules:
+we give margin outside the box.
+padding is given inside the box
+
+inline and block elements rule:
+if there are two elements inside a dive. if the first element is inline and second line is block then they will appear in separate line. if the two elements are block then they will appear in separate line. if theya are inline and in a row enough space is there then they will appear in same line. but if not enough space is present then they will appear in different line.
+
+inline element will never allow you to modify there width and hight.
+
+block elements will allow you to change their width and height
+
+if we want to increase the hight and width of the elements then there comes inline block.
+
+block element will never allow any element on their left and right. But inline says come if there enough space.
+
+
+positioning --- absolute and relative, fixed
+
+absolute--
+when we give position absolute to an element then the alement go above or the element rise. and we view the website from front. and the nereset elements of thgiven absolute position element will go that place 
+
+relative--
+relative positioning is something when we give position absolute in some child elementof an relative parent element and we want that child should stay inside the parent's paremeter. then we give the positioning relative to the parent element.
+
+fixed--
+position fixed is the property when we want to stick the element on the screen in one position
+
+Background ---
+
+
+Rule -- Flexbox
+when we want the element in side by side then we use flexbox.
+
+we apply flexbox property to the realtive parent not in the child.
+
+when we apply flexbox in the relative parent then the 2 axis activated like x-axis(main-axis) and y-axis(cross-axis)
+
+main-axis/x-axis pe work karne ke liye use hota hey jutify content and y-axis/cross-axis pe work karne ke liye use hota he align-items 
+
+psudo elements rule--
+har element ke pass ek possibility hoti hai ki wo element chahe to inactive do after and before naam ki properties ko active kar sakte hai
+
+psudo classes:--
+nthChild
+
+colors rule:----
+color Names = red, green ,blue.
+Hexadecimal Notation: #
+RGB Functional Notation: rgb 
+RGBA Functional Notation: RGBA
+
+aisa samjho humaari screen mainly teen colors dikha sakti hai, kehne ka matlab hai screen bani khoob saari leds se and har led teen color dikha sakti hai and unka combination bhi.
+
+css main har color ki min value 0 hai and maximum value 255 hai
+r-255
+g-255
+b-255
+
+teeno full intencity -- white
+teeno full lowest intencity -- black
+
+gird ---
+grid is for build for website structureyt6
+
+difference between display flex and display grid is display flex is single dimensional menas we can work on a single dimension either row wise or column wise at a particular time. But,
+in display grid is two dimensional property we can work upon row and column both in a particular time.

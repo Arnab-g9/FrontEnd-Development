@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#box {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 300px;
+  height: 300px;
+  justify-content: space-evenly;
+  background-color: red;
+}
+#one {
+  width: 50px;
+  /* flex: 3; */
+  height: 50px;
+  background-color: yellow;
+}
+#two {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+}
+#three {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+}

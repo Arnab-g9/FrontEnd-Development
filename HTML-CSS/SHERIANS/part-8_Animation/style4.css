@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: black;
+  padding: 5vw;
+}
+button {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid cyan;
+  color: cyan;
+  font-weight: 400;
+  position: relative;
+  transition: all linear 0.5s;
+  cursor: pointer;
+}
+
+button::after {
+  content: "";
+  height: 100%;
+  width: 0%;
+  background-color: cyan;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all linear 0.5s;
+  z-index: -1;
+}
+button:hover::after {
+  width: 100%;
+}
+button:hover {
+  color: black;
+}
+
+/* for button two animation */
+.btn2 {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: cyan;
+  border: 2px solid cyan;
+  position: relative;
+  cursor: pointer;
+  transition: all linear 0.5s;
+  overflow: hidden;
+}
+.btn2::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: cyan;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all linear 0.5s;
+  z-index: -1;
+}
+.btn2:hover::after {
+  /* width: 100%; */
+  transform: translate(-50%, -50%) scale(3);
+}
+.btn2:hover {
+  color: black;
+}

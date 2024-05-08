@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  /* background-color: rgb(255, 255, 255); */
+  /* hex value -- first 2value, red, then 2 value green, then last 2value blue */
+  /* background-color: #f875aa; */
+  /* rgba - a for transparency. 0 means fully transparent, 1 means no transparency */
+}

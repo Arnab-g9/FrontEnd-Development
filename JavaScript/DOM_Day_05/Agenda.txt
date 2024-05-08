@@ -1,0 +1,17 @@
+1. HTML & CSS Crash course (around 30-40 mins)
+2. Async vs defer
+3. Select elements using id
+4. querySelector
+5. textContent & innerText
+6. Change the styles of elements using js
+7. Get and Set attributes
+8. Select multiple elements and loop through them
+9. innerHTML
+10. Deeply Understand dom tree, root node, element nodes, text nodes
+11. classList
+12. Add new elements to page
+13. Create elements
+14. insert adjecent elements
+15. clone nodes
+16. More Methods to add elements on page
+17. How to get the dimentions of the element

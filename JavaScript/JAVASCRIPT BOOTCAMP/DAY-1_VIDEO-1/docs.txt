@@ -1,0 +1,2 @@
+Brendan Eich made javascript in 10 days.
+first name of javascript was mocha.

@@ -1,0 +1,243 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: #ededed;
+  display: grid;
+  grid-template-columns: 25% 25% 50%;
+  grid-template-rows: 26% 56% 18%;
+  /* grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%; */
+}
+/* #left {
+  background-color: red;
+}
+#right {
+  background-color: blue;
+} */
+/* .elem {
+  background-color: red;
+  border: 3px solid black;
+} */
+/* #elem1 {
+  background-color: violet;
+  {-- this is shortcart of next steps
+  grid-row: 1/3;
+  grid-column: 1/4; }
+   grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 4; 
+}  */
+#left-top-left {
+  /* background-color: crimson; */
+  padding: 40px;
+}
+#square {
+  height: 25px;
+  width: 25px;
+  background-color: black;
+  rotate: 45deg;
+}
+#left-top-right {
+  /* background-color: rgb(56, 19, 83); */
+  justify-self: right;
+  padding: 40px;
+  text-align: right;
+}
+#left-top-right h6 {
+  display: none;
+}
+#left-top-right h4 {
+  /* background-color: red; */
+  margin-bottom: 50px;
+  font-size: 20px;
+  font-weight: 500;
+}
+#left-top-right h5 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+#left-center {
+  /* background-color: royalblue; */
+  grid-column: 1/3;
+  padding: 40px;
+}
+#left-center h1 {
+  font-size: 6vw;
+  text-transform: uppercase;
+  line-height: 6vw;
+  font-weight: 500;
+  font-family: Helvetica;
+}
+#left-center h1:nth-child(2n) {
+  /* background-color: red; */
+  text-align: center;
+}
+#left-bottom {
+  /* background-color: chartreuse; */
+  grid-column: 1/3;
+  padding: 40px;
+}
+
+#left-bottom p {
+  width: 70%;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+#right {
+  /* background-color: blueviolet; */
+  grid-column: 3;
+  grid-row: 1/4;
+  padding: 40px;
+  padding-right: 150px;
+}
+
+#right video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 60px;
+  object-position: 50% 20%;
+  /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
+}
+
+#arrow {
+  position: absolute;
+  top: 50%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: orangered;
+  color: white;
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+#arrow i {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+@media (max-width: 600px) {
+  #main {
+    height: 100%;
+    width: 100%;
+    background-color: #ededed;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 60px 34% 8%;
+  }
+  #left-top-left {
+    /* background-color: crimson; */
+    padding: 40px;
+  }
+  #square {
+    height: 15px;
+    width: 15px;
+    /* background-color: black;
+    rotate: 45deg; */
+  }
+  #left-top-right {
+    /* background-color: rgb(56, 19, 83); */
+    justify-self: right;
+    padding: 20px;
+    text-align: right;
+  }
+  #left-top-right h4 {
+    /* background-color: red;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: 500; */
+    display: none;
+  }
+  #left-top-right h5 {
+    /* font-size: 16px;
+    font-weight: 500;
+    color: #333; */
+    display: none;
+  }
+  #left-top-right h6 {
+    display: initial;
+    font-size: 20px;
+  }
+  #left-center {
+    /* background-color: royalblue; */
+    /* grid-column: 1/3; */
+    padding: 10px 20px;
+  }
+  #left-center h1 {
+    font-size: 17vw;
+    /* text-transform: uppercase; */
+    line-height: 14vw;
+    /* font-weight: 500; */
+    /* font-family: Helvetica; */
+  }
+  #left-center h1:nth-child(2n) {
+    /* background-color: red; */
+    text-align: right;
+  }
+  #left-bottom {
+    /* background-color: chartreuse; */
+    grid-column: 1/3;
+    padding: 5px 20px;
+  }
+
+  #left-bottom p {
+    width: 90%;
+    font-size: 10px;
+    font-weight: 500;
+    color: #333;
+  }
+
+  #right video {
+    height: 42vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  #arrow {
+    /* position: absolute; */
+    top: 54%;
+    left: 38%;
+    padding: 10px;
+    rotate: 90deg;
+    transform: translate(-50%, -50%);
+    /* 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orangered;
+    color: white;
+    border-radius: 50%;
+    font-size: 30px; */
+  }
+
+  #arrow i {
+    font-size: 20px;
+    /* font-weight: 100; */
+  }
+  #right {
+    /* background-color: blueviolet; */
+    grid-column: 1 / 4;
+    grid-row: 4;
+    padding: 20px;
+    padding-right: 20px;
+  }
+}
