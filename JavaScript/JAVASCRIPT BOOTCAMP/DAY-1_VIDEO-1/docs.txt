@@ -1,2 +1,5 @@
 Brendan Eich made javascript in 10 days.
 first name of javascript was mocha.
+
+JavaScript is BackWard compitable - means which code javascript launch 25 years ago it will eun in modern browser. 
+JavaScript is not Forward compitable - means which code JavaScript launch currently and someone who does not upgrade his browser for a long time then the current code might not run on his browser.
