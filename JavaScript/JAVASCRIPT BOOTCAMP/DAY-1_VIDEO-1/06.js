@@ -22,6 +22,5 @@ let newLowerCaseString = firstName.toLowerCase();
 console.log(newLowerCaseString);
 
 //  slice method -- it islike substring in Java
-
 let newSliceString = newString.slice(0, 4);
 console.log(newSliceString);
