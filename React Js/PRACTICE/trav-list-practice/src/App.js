@@ -1,15 +1,23 @@
 import { useState } from "react";
 import "./index.css";
-const initialItems = [
-  { id: 1, description: "Passports", quantity: 2, packed: false },
-  { id: 2, description: "Socks", quantity: 12, packed: true },
-];
+
+// const initialItems = [
+//   { id: 1, description: "Passports", quantity: 2, packed: false },
+//   { id: 2, description: "Socks", quantity: 12, packed: true },
+// ];
+
 export default function App() {
+  const [items, setItems] = useState([]);
+
+  function handleAddItems(item) {
+    setItems((items) => [...items, item]);
+  }
+
   return (
     <div className="app">
       <Logo />
-      <Form />
-      <PackingList />
+      <Form onAddItems={handleAddItems} />
+      <PackingList items={items} />
       <Stats />
     </div>
   );
@@ -18,15 +26,18 @@ export default function App() {
 function Logo() {
   return <h1>🌴 Far Away 👜</h1>;
 }
-function Form() {
+
+function Form({ onAddItems }) {
   const [description, setDescription] = useState("");
   const [qty, setQty] = useState(1);
+
   function handleSubmit(e) {
     e.preventDefault();
     if (!description) return;
     // console.log(e);
     const newItem = { description, qty, packed: false, id: Date.now() };
     console.log(newItem);
+    onAddItems(newItem);
     setDescription("");
     setQty(1);
   }
@@ -54,28 +65,31 @@ function Form() {
     </form>
   );
 }
-function PackingList() {
+
+function PackingList({ items }) {
   return (
     <div className="list">
       <ul>
-        {initialItems.map((item) => (
+        {items.map((item) => (
           <Item item={item} key={item.id} />
         ))}
       </ul>
     </div>
   );
 }
+
 function Item({ item }) {
   return (
     <li style={item.packed ? { textDecoration: "line-through" } : {}}>
       <span>
-        {item.quantity + " "}
+        {item.qty + " "}
         {item.description}
       </span>
       <button>❌</button>
     </li>
   );
 }
+
 function Stats() {
   return (
     <footer className="stats">
