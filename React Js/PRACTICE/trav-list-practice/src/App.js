@@ -23,8 +23,14 @@ function Form() {
   const [qty, setQty] = useState(1);
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(e);
+    if (!description) return;
+    // console.log(e);
+    const newItem = { description, qty, packed: false, id: Date.now() };
+    console.log(newItem);
+    setDescription("");
+    setQty(1);
   }
+
   return (
     <form className="add-form" onSubmit={handleSubmit}>
       <h3>what do u need for your 😃 trip?</h3>
