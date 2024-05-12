@@ -30,4 +30,4 @@ person.gender = "male";
 person["salary"] = 100000;
 console.log(person);
 
-// last watch : 1:25:55
+
