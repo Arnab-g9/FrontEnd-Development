@@ -1,6 +1,6 @@
 // default parameters
 function addTwo(a, b = 1) {
-  // this is the default parameter syntax
+  // this is the default parameter syntax. Here default value of 'b' will be '1'
 
   return a + b;
 }
