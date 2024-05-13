@@ -7,8 +7,8 @@ function myApp() {
     const myVar = "value59"; // const variable with same name can be declare on different level of code block but not on the same level
     console.log("inside myFunc ", myVar);
   }
-  //   const myFunc2 = function () {};
-  //   const muFunc3 = () => {};
+  const myFunc2 = function () {};
+  const muFunc3 = () => {};
   console.log(myVar);
   myFunc();
 }
