@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Radio Canada Big", sans-serif;
+}
+.container {
+  width: 600px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px;
+  gap: 50px;
+}
+.item {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 25px;
+  transition: all 0.3s;
+  background-color: rgba(240, 240, 240, 0.442);
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 2px 5px 20px #9f9f9f;
+}
+.green-border {
+  border-top: 3px solid green;
+}
+.no {
+  display: flex;
+  gap: 50px;
+  font-size: 18px;
+  /* font-weight: bold; */
+}
+
+.text-green {
+  color: green;
+}
+.answer {
+  text-align: justify;
+  animation: answerAppear 1s ease-out;
+  animation-fill-mode: backwards;
+}
+@keyframes answerAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  80% {
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
