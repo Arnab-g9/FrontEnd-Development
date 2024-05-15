@@ -13,7 +13,7 @@ console.log("value of myvar3 is ", myvar3);
 
 // if we want to store value in myvar2 to value3 then the syntax will be
 const [var1, , , var2] = myArray;
-console.log(var1, var2);
+console.log(var1);
 
 // we want desire values in seperate variable and rest of the values we want to store/get in the form of array -- using rest operator / using slice method
 let [v1, v2, ...v3] = myArray;
