@@ -1,4 +1,4 @@
-// important array methods
+// important array methods -- these are not mutated method
 
 // forEach
 // map

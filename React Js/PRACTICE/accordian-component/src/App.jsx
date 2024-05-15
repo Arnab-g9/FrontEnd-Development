@@ -16,27 +16,34 @@ const faqs = [
 ];
 
 export default function App() {
+  const [curOpen, setCurOpen] = useState(null);
   return (
     <ul className="container">
       {faqs.map((faq, i) => (
-        <Accordian faq={faq} key={i} index={i} />
+        <Accordian
+          faq={faq}
+          key={i}
+          index={i}
+          curOpen={curOpen}
+          onOpen={setCurOpen}
+        />
       ))}
     </ul>
   );
 }
-function Accordian({ faq, index }) {
-  const [click, setClick] = useState(false);
+function Accordian({ faq, index, curOpen, onOpen }) {
+  const isOpen = curOpen === index;
   return (
     <li
-      onClick={() => setClick((click) => !click)}
-      className={`item ${click ? "green-border" : ""} `}
+      onClick={() => onOpen((curOpen) => (curOpen === index ? null : index))}
+      className={`item ${isOpen ? "green-border" : ""} `}
     >
-      <span className={`no ${click ? "text-green" : ""}`}>
+      <span className={`no ${isOpen ? "text-green" : ""}`}>
         {index + 1 < 10 ? `0${index + 1}` : index + 1}{" "}
         <p className="question">{faq.title}</p>
       </span>
 
-      {click && <p className="answer">{faq.text}</p>}
+      {isOpen && <p className="answer">{faq.text}</p>}
     </li>
   );
 }

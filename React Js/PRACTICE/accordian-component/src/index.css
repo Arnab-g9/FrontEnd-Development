@@ -22,19 +22,19 @@ body,
   justify-content: center;
   align-items: flex-start;
   padding: 50px;
-  gap: 50px;
+  gap: 25px;
 }
 .item {
   width: 95%;
   display: flex;
   flex-direction: column;
   padding: 30px;
-  gap: 25px;
   transition: all 0.3s;
   background-color: rgba(240, 240, 240, 0.442);
   cursor: pointer;
   border-radius: 20px;
-  box-shadow: 2px 5px 20px #9f9f9f;
+  box-shadow: 2px 3px 10px #9f9f9f;
+  gap: 10px;
 }
 .green-border {
   border-top: 3px solid green;
