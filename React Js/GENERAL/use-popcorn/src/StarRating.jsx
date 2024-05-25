@@ -28,7 +28,7 @@ export default function StarRating({
   className = "",
   messages = [],
   defaultRating,
-  onSetStar,
+  onSetRating,
 }) {
   const [rating, setRating] = useState(defaultRating);
   const [tempRating, setTempRating] = useState(0);
@@ -46,12 +46,11 @@ export default function StarRating({
     <div style={containerStyle} className={className}>
       <div style={starContainerStyle}>
         {Array.from({ length: maxRating }, (_, i) => (
-          <span>
+          <span key={i}>
             <Star
-              key={i}
               onRate={() => {
                 setRating(i + 1);
-                onSetStar(i + 1);
+                onSetRating(i + 1);
               }}
               onHoverIn={() => setTempRating(i + 1)}
               onHoverOut={() => setTempRating(0)}

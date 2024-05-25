@@ -4,15 +4,15 @@ import StarRating from "./StarRating";
 import "./index.css";
 import App from "./App";
 
-function Test() {
-  const [starNo, setStarNo] = useState(0);
-  return (
-    <div>
-      <StarRating color="blue" onSetStar={setStarNo} />
-      <p>This movie was rated {starNo} stars</p>
-    </div>
-  );
-}
+// function Test() {
+//   const [starNo, setStarNo] = useState(0);
+//   return (
+//     <div>
+//       <StarRating color="blue" onSetStar={setStarNo} />
+//       <p>This movie was rated {starNo} stars</p>
+//     </div>
+//   );
+// }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
