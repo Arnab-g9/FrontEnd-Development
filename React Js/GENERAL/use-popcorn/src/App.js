@@ -318,6 +318,13 @@ function MovieDetail({ selectedId, onCloseMovie, onAddWatched, watched }) {
   }
   useEffect(
     function () {
+      if (!title) return;
+      document.title = `Movie | ${title}`;
+    },
+    [title]
+  );
+  useEffect(
+    function () {
       setIsLoading(true);
       async function getMovieDetails() {
         const res = await fetch(
