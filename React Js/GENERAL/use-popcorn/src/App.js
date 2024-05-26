@@ -113,10 +113,13 @@ export default function App() {
           if (data.Response === "False") throw new Error("Movie not found");
 
           setMovies(data.Search);
+          setError("");
           // console.log(data);
         } catch (err) {
           // console.log(err.message);
-          setError(err.message);
+          if (err.name !== "AbortError") {
+            setError(err.message);
+          }
         } finally {
           setIsLoading(false);
         }
@@ -126,6 +129,7 @@ export default function App() {
         setError("");
         return;
       }
+      handleCloseMovie();
       fetchMovies();
 
       return function () {
@@ -324,11 +328,27 @@ function MovieDetail({ selectedId, onCloseMovie, onAddWatched, watched }) {
   }
   useEffect(
     function () {
+      function callback(e) {
+        if (e.code === "Escape") {
+          onCloseMovie();
+          // console.log("CLOSING");
+        }
+      }
+      document.addEventListener(`keydown`, callback);
+      return function () {
+        document.removeEventListener("keydown", callback);
+      };
+    },
+    [onCloseMovie]
+  );
+  useEffect(
+    function () {
       if (!title) return;
       document.title = `Movie | ${title}`;
 
       return function () {
         document.title = "usePopcorn";
+        // console.log(`Clean up Effect for movie ${title}`);
       };
     },
     [title]
