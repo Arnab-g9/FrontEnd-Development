@@ -1,7 +1,0 @@
-/* nth child */
-p:nth-child(2n) {
-  color: red;
-  /* 
-  if write 2n it will select the multiple of two lines and perform the operation. it is a very powerful tool. we can select our customise elements
-  */
-}
