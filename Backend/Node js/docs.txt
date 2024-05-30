@@ -1,0 +1,1 @@
+Node js - is a js runtime environment. it is only a platform, not a language, not a frame work and not a library
