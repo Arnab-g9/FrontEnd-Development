@@ -1,3 +1,30 @@
 Node js - is a js runtime environment. it is only a platform, not a language, not a frame work and not a library
 
+----------------------------------////----------------------------------
+
 it is used for server side programming
+
+Node REPL -> full form
+--> Read
+--> Evalute
+--> Print
+--> Loop
+
+.help give us command
+
+----------------------------------////----------------------------------
+
+Process--
+Process: this objectprovides information about, and control over, the current Node.js process.
+
+process.argv: returns an array containing the command-line arguments passed when the node.js process was launched.
+
+----------------------------------////----------------------------------
+module.exports
+requiring files
+
+require() a build-in function to include external modules thatexist in separate files. module.exports a special object
+
+----------------------------------////----------------------------------
+NPM (Node package Manager)
+npm is the standard package manager for Node.js
