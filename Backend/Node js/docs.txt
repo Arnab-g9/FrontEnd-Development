@@ -28,3 +28,25 @@ require() a build-in function to include external modules thatexist in separate 
 ----------------------------------////----------------------------------
 NPM (Node package Manager)
 npm is the standard package manager for Node.js
+
+----------------------------------////----------------------------------
+node_modules: the node_modules folder contains every installed dependency for your project.
+
+package-lock.json: It records the exact version of every installed dependency, including its sub-dependencies and their version
+
+Package.json: the package.json file contains descriptive and functional metadata about a project, such as a name, version and dependencies.
+
+----------------------------------////----------------------------------
+
+Local V/S Global
+
+npm install -g <-package name->
+npm link <-package name->
+
+----------------------------------////----------------------------------
+
+require v/s import
+
+import {sum} from './math.js
+
+we can't selectively load only the piece we need with require but with import, we can selectively load only the piece we need, which can save memory. Loading is synchronous for 'require' but can be asynchronous for 'import'.
