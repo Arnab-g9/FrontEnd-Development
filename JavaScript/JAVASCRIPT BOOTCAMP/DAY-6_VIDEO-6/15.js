@@ -39,6 +39,10 @@ const newUser3 = new CreateUser(
   27,
   "Haldia"
 );
-console.log(newUser1);
 
-// those function which will call after the new keuword those function's name will start with capital letter.
+for (let key in newUser1) {
+  if (newUser1.hasOwnProperty(key)) {
+    console.log(key); // this will just print it's own property not all the property that it get from the prototype and proto
+  }
+  // console.log(key);
+}
