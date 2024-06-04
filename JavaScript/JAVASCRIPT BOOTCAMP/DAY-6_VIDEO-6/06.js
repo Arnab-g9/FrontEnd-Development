@@ -26,7 +26,7 @@ personInfo.call(user2);
 
 // for this example the result will be the same. because personInfo is a function expression and it is used arrow function internally. except arrow function it will print the details with other functions.
 
-// ------ We can writethe methods in object like this also ------
+// ------ We can write the methods in object like this also ------
 const user3 = {
   firstName: "harshit",
   age: 8,
