@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#box{
+    height: 500px;
+    width: 500px;
+    background-color: royalblue;
+}
+@media (max-width:600px){
+    /* this max-width value will work max-to max 600px not more then that. it will work less or equal to 600px screen size. Most of the mobile screen size comes under 600px */
+    #box{
+        background-color: red;
+        height: 300px;
+        width: 300px;
+    }
+}

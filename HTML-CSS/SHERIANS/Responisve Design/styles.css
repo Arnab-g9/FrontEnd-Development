@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+/*
+
+#parent{
+    height: 500px;
+    width: 500px;
+    background-color: cyan;
+}
+
+in px the value remain steal. so they are not responsive
+
+#child{
+    height: 250px;
+    width: 250px;
+    background-color: red;
+
+} */
+
+
+/* 
+#parent{
+    height: 500px;
+    width: 500px;
+    background-color: cyan;
+}
+#child{
+
+     when we use percentage value then the child element get adjust by the % value of parent 
+
+    height: 50%;
+    width: 50%;
+    background-color: salmon;
+}
+*/
+
+
+/* 
+
+using vw and vh
+
+when we will use vw and vh it will take the mention value of the screen in width and height.
+
+#parent{
+    height: 30vw;
+    width: 30vw;
+    background-color: cyan;
+}
+#child{
+    height: 50%;
+    width: 50%;
+    background-color: salmon;
+}
+
+*/
+
+
+/* h1{
+    font-size: 10vw;
+} */
+
+
+/* 
+
+vamx, vmin will take the maximum (for vmax) and minimum of screen between width and height (for vmin). it will happen according to the screen size 
+
+h1{
+    font-size: 10vmin;
+}
+
+*/
+/* em -> it will work on the closest parent. so we have to give the desire value to the parent and based upon that we can give the font szie to the elements. 1em = original value, 2em = 2*original value, 
+
+rem --> it will take the font size according to the root element. 1rem = 16px */
+#parentnav{
+    background-color: rosybrown;
+    font-size: 50px;
+}
+h1{
+    font-size: 1em;
+}
+h2{
+    font-size: 2em;
+}
+h3{
+    font-size: 3em;
+}
