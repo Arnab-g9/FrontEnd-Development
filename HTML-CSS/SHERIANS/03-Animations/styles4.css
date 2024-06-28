@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    padding: 5vw;
+}
+h1{
+    font-size: 100px;
+    color: red;
+}
+h1::before{
+    content: "HE he he ";
+    color: green;
+}
+h1::after{
+    content: " and dostniyo";
+    color: blue;
+}
+/* when we apply after and before to an element and the virtual cntent comes after the actual elemnt's content's afteror before position. like example is given below */
+#box{
+    height: 300px;
+    width: 300px;
+    background-color: crimson;
+}
+#box::before{
+    content: "Hui hui hui ";
+}
+#box::after{
+    content: "kaise ho";
+}
+button{
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid cyan;
+    color: cyan;
+    font-weight: 600;
+    position: relative;
+    transition: linear all 0.5s;
+    overflow: hidden;
+}
+/* button::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: cyan;
+    left: 0;
+    top: 0;
+    width: 0;
+    transition: linear all 0.5s;
+    z-index: -1;
+} */
+button::after{
+    content: "";
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: cyan;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: linear all 0.5s;
+    z-index: -1;
+}
+button:hover{
+    color: black;
+
+}
+button:hover::after{
+    transform: translate(-50%, -50%) scale(3);
+}

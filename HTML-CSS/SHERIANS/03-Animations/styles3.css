@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#box1, #box2{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    animation-name: box-anime;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    /* animation-fill-mode property will take the final values of animation to its actual value. it will actually depend on the values like forward or backword. if forward then it will take the final values. if backword then it will take the from 0r 0% value*/
+    animation-fill-mode: forwards;
+    /* animation-iteration-count will decide how many time the animation will happen */
+    animation-iteration-count: 3;
+    /* animation-direction this property will decide in which direction the animation will run. */
+    animation-direction: alternate;
+    /* animation-timing-function this property will show the animation graph. like this property will decide the animations speed in start and end. the value of the property are: ease-in: it will do start slow and end fast., ease-out: it will do start fast end slow. linear: it will do start and end normal speed. ease-in-out: starting slow, ending slow and middle fast */
+    animation-timing-function: ease-in-out;
+}
+
+#box1{
+    background-color: crimson;
+}
+#box2{
+    background-color: royalblue;
+}
+
+@keyframes box-anime{
+    from{
+        left: 0;
+    }
+    to{
+        left: 75%;
+    }
+}
